@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Damage Detection"
+        android:textSize="24sp"
+        android:textColor="#210101"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:letterSpacing="0.1"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:padding="8dp"
+        android:gravity="center"/>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/border"
+        android:padding="4dp">  <!-- Optional padding -->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop" />
+
+    </FrameLayout>
+
+
+
+
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Open Camera"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/galleryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Import from Gallery"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Damage Assessment Result"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        android:textColor="#0B0202"
+    android:padding="12dp"
+    android:gravity="center"
+    android:shadowColor="#000000"
+    android:shadowDx="1"
+    android:shadowDy="1"
+    android:shadowRadius="4"
+   /> <!-- Replace with your font if needed -->
+
+
+</LinearLayout>
